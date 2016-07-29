@@ -12,7 +12,7 @@ if (!function_exists('alert')) {
      */
     function alert($message = null, $title = '')
     {
-        $notifier = app('uxweb.sweet-alert');
+        $notifier = app('sweetalert');
 
         if (!is_null($message)) {
             return $notifier->message($message, $title);
