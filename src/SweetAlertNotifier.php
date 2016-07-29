@@ -1,6 +1,6 @@
 <?php
 
-namespace UxWeb\SweetAlert;
+namespace Germey\SweetAlert;
 
 class SweetAlertNotifier
 {
@@ -185,10 +185,10 @@ class SweetAlertNotifier
     private function flashConfig()
     {
         foreach ($this->config as $key => $value) {
-            $this->session->flash("sweet_alert.{$key}", $value);
+            $this->session->flash("sweetalert.{$key}", $value);
         }
 
-        $this->session->flash('sweet_alert.alert', $this->buildConfig());
+        $this->session->flash('sweetalert.alert', $this->buildConfig());
     }
 
     /**

@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Germey\SweetAlert;
 
@@ -17,7 +17,7 @@ class SweetAlertServiceProvider extends ServiceProvider
             'Germey\SweetAlert\SessionStore',
             'Germey\SweetAlert\LaravelSessionStore'
         );
-
+	    
         $this->app->singleton('sweetalert', function () {
             return $this->app->make('Germey\SweetAlert\SweetAlertNotifier');
         });

@@ -1,5 +1,6 @@
-<link href="/plugins/sweetalert/css/sweetalert.min.css" rel="stylesheet">
+<link href="/plugins/sweetalert/css/sweetalert.css" rel="stylesheet">
 <script src="/plugins/sweetalert/js/sweetalert.min.js"></script>
+
 @if(Session::has('sweet_alert.alert'))
     <script>
         swal({
