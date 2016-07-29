@@ -30,10 +30,14 @@ class SweetAlertServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->loadViewsFrom(__DIR__.'/../views', 'sweet');
+        $this->loadViewsFrom(__DIR__.'/views', 'sweetalert');
 
         $this->publishes([
-            __DIR__.'/../views' => base_path('resources/views/vendor/sweet'),
+            __DIR__.'/views' => base_path('resources/views/vendor/sweetalert'),
         ]);
+
+	    $this->publishes([
+		    __DIR__.'/assets' => public_path('/plugins'),
+	    ], 'public');
     }
 }
