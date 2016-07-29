@@ -1,4 +1,4 @@
-# Easy Sweet Alert Messages for Laravel
+# Sweet Alert for Laravel
 
 ## Installation
 
